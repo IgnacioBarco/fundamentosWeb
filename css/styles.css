@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+@font-face {
+  font-family: juego-tronos;
+  src: url(../fonts/gt.ttf);
+}
+
+:root {
+  /*navbar*/
+  --navbar-text-color: white;
+  --navbar-bg-color: black;
+
+  --text-color: #222222;
+  --bg-color: white;
+  --bg-inverted: #efeffe;
+
+  /*footer*/
+  --footer-text-color: white;
+  --footer-bg-color: black;
+}
