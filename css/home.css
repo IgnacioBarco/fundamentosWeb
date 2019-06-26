@@ -1,5 +1,120 @@
-main{
-    padding-top: 2rem; 
+main {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section > div h2 {
+  display: flex;
+  justify-content: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+div[class^="item"] {
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+}
+
+a[class^="prev-item"],
+a[class^="next-item"]
+{
+  display: none;
+}
+
+
+
+
+
+@media all and (min-width: 480px) {
+  main {
+    display: block;
+  }
+
+  main section {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+  }
+
+  section > div h2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+
+  a[class^="prev-item"] {
+    display: flex;
+    width: 5%;
+    padding-left: 1rem;
+  }
+ 
+  h2[class^="titulo"] {
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+    padding-left: 1rem;
+  }
+
+  
+  a[class^="next-item"] {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  main section div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div[class^="item"] {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  /* hacer el cuaro mas pequeño para posible icono
+  
+  .lista-recomendacion .item-recomendacion1,
+  .lista-recomendacion .item-recomendacion2,
+  .lista-recomendacion .item-recomendacion3 {
+    flex-grow: 4;
+  }
+  .lista-recomendacion .item-recomendacion4 {
+    flex-grow: 1;
+  } */
+
+  div[class^="item"]{
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+  }
+
+  div[class^="item4"],
+  div[class^="item5"] {
+    display: none;
+  }
+
+
 }
+
+
+
+ @media all and (min-width: 991px) {
+   
+  div[class^="item4"],
+  div[class^="item5"] {
+    display: flex;
+  }
+    }
+  } 

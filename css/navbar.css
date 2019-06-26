@@ -1,16 +1,7 @@
-/* navbar */
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "logo";
-    src: url("../img/logo.png") format("png");
-  }
-}
-
 .navbar {
   background-color: var(--navbar-bg-color);
   color: var(--navbar-text-color);
-  height: 2rem;
+  height: 6rem;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -19,26 +10,31 @@
 }
 
 .logo {
-  width: 20%;  
-  font-family: "logo";
-  font-size: 20px;
-  font-style: normal;
-  margin-left: 20px;
+  width: 9rem;
+  height: 6rem;
+  margin-left: 0.2rem;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
   z-index: 2;
 }
 
-.navbar-list {
-  display: flex;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+.nueva-cuenta > a {
+ display: flex;
+ width: 100%;   
+ text-align: end;
+ margin-top: .5rem; 
+ margin-right: .5rem;
+ font-size: 1.2rem;
+ text-decoration: none;
+ text-decoration-line: underline;   
+ color: var(--navbar-text-color);
+ text-decoration-color: var(--navbar-text-color);   
 }
 
-.navbar-item {
-  text-decoration: none;
-  flex-grow: 1;
-}
 
+@media all and (min-width: 480px) {
+    
+}
 
 
 
