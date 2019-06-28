@@ -25,27 +25,4 @@ footer > ul {
   font-size: 1.1rem;
 }
 
-/*
-footer {
-  background-color: var(--navbar-bg-color);
-  color: var(--navbar-text-color);
-  bottom: 0;
-  height: 6rem;
-  width: 100%;
-  position: fixed; 
-  z-index: 1;
-  display: flex;
-  justify-content: space-between; 
-}
 
-footer>ul {
-  display: inline-block;
-  justify-content: center;    
-  align-content: center;
-}
-
-.direccion {
-  display: inline-block;
-  justify-content: center;    
-  align-content: left;
-}*/
