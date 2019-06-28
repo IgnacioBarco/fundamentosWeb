@@ -37,9 +37,6 @@ main * {
 }
 
 @media all and (min-width: 480px) {
-  main {
-    background-color: grey; 
-  }
 
   main * {
     justify-content: flex-start;

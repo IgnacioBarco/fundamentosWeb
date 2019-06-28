@@ -8,7 +8,7 @@ footer {
   z-index: 1;
 }
 
-footer > ul {
+.privacidad {
   display: none;
 }
 
@@ -20,9 +20,23 @@ footer > ul {
   justify-content: space-evenly;
 }
 
-.item-direccion {
+.direccion p {
   margin: 0 auto;
   font-size: 1.1rem;
 }
 
+@media all and (min-width: 991px) {
+  .direccion {
+    flex-direction: row;
+  }
+
+  .direccion p {
+    font-size: 1.4rem;
+    display: flex;
+    align-self: center;
+  }
+  
+    
+
+}
 
