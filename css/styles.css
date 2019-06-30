@@ -1,10 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-@font-face {
-  font-family: iconos;
-  src: url(../fonts/fontello.ttf);
-}
-
 :root {
   /*navbar*/
   --navbar-text-color: white;
