@@ -36,6 +36,8 @@ main * {
   height: 35vh;
 }
 
+
+
 @media all and (min-width: 480px) {
 
   main * {
@@ -66,7 +68,34 @@ main * {
   .lista-peliculas-similares {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    padding-bottom: .5rem;
   }
+
+  .lista-peliculas-similares  div:first-child  {
+    padding-left:.5rem;
+  }
+
+  .lista-peliculas-similares div {
+    display: flex;
+    flex-grow: 1; 
+    padding-right:.5rem; 
+    height: 100%;
+  }
+
+  .lista-peliculas-similares  div:first-child  {
+    padding-left:.5rem;
+  }
+
+  .lista-peliculas-similares div img {
+    display: flex;
+    flex-grow: 1; 
+    
+    height: 100%;
+    background-size: cover; 
+  }
+
+
 
   div[class^="item4"],
   div[class^="item5"] {
