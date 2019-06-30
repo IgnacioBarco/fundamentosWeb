@@ -32,6 +32,10 @@ footer > .privacidad {
   text-align: center;
 }
 
+ul li a {
+  color: var(--footer-text-color);
+}
+
 @media all and (min-width: 480px) {
   footer {
     height: 6rem;
@@ -39,7 +43,7 @@ footer > .privacidad {
   }
 
   footer .privacidad {
-    padding:.5rem;
+    padding: 0.5rem;
   }
 
   .privacidad,
@@ -54,6 +58,10 @@ footer > .privacidad {
 
   .privacidad li {
     display: flex;
+  }
+
+  ul li a {
+    text-decoration: underline;
   }
 }
 

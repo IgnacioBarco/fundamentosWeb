@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cookie&display=swap");
 
 h1 {
-  font-family: 'Barriecito', 'Courier New', Courier, monospace;
+  font-family: "Barriecito", "Courier New", Courier, monospace;
 }
 
 h2 {
-  font-family: 'Cookie', cursive, 'Courier New', Courier, monospace;
-  font-size: 2rem; 
-} 
+  font-family: "Cookie", cursive, "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
 
 body {
   display: flex;
@@ -30,7 +30,7 @@ main * {
 .caracteristicas-pelicula,
 .pelicula,
 .peliculas-similares,
-.lista-peliculas-similares  {
+.lista-peliculas-similares {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -38,7 +38,7 @@ main * {
 }
 
 .caracteristicas-pelicula div,
-.sinopsis-pelicula  {
+.sinopsis-pelicula {
   padding-left: 1rem;
 }
 
@@ -48,20 +48,16 @@ main * {
   height: 35vh;
 }
 
-
-
 @media all and (min-width: 480px) {
-
   main * {
     justify-content: flex-start;
   }
-
 
   .video-pelicula iframe {
     height: 70vh;
   }
 
-  .titulo-pelicula{
+  .titulo-pelicula {
     padding-left: 1rem;
   }
 
@@ -81,97 +77,84 @@ main * {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
-  .lista-peliculas-similares  div:first-child  {
-    padding-left:.5rem;
+  .lista-peliculas-similares div:first-child {
+    padding-left: 0.5rem;
   }
 
   .lista-peliculas-similares div {
     display: flex;
-    flex-grow: 1; 
-    padding-right:.5rem; 
+    flex-grow: 1;
+    padding-right: 0.5rem;
     height: 100%;
   }
 
-  .lista-peliculas-similares  div:first-child  {
-    padding-left:.5rem;
+  .lista-peliculas-similares div:first-child {
+    padding-left: 0.5rem;
   }
 
   .lista-peliculas-similares div img {
     display: flex;
-    flex-grow: 1; 
-    
+    flex-grow: 1;
+
     height: 100%;
-    background-size: cover; 
+    background-size: cover;
   }
-
-
 
   div[class^="item4"],
   div[class^="item5"] {
     display: none;
   }
-
 }
 
 @media all and (min-width: 991px) {
   .main * {
     display: grid;
   }
-  
+
   .main {
     display: grid;
     grid-template-rows: 70vh 30vh 30vh;
   }
 
-  .pelicula  {
+  .pelicula {
     display: grid;
     grid-template-rows: 70vh 10vh 20vh;
-    grid-template-columns:  80% 20%;
-
-
+    grid-template-columns: 80% 20%;
   }
 
   .video-pelicula {
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 1;  
-    grid-column-end: 2;  
-  }  
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 
   .caracteristicas-pelicula {
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 2;  
-    grid-column-end: 2;   
-  } 
-  
-  
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
   .titulo-pelicula {
     grid-row-start: 2;
     grid-row-end: 2;
-    grid-column-start: 1;  
+    grid-column-start: 1;
     grid-column-end: 3;
-      
   }
 
   .sinopsis-pelicula {
     grid-row-start: 3;
     grid-row-end: 3;
-    grid-column-start: 1;  
-    grid-column-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
-    
   div[class^="item4"],
   div[class^="item5"] {
     display: flex;
   }
-
-
-
-
-
 }
