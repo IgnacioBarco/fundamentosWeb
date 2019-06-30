@@ -25,11 +25,11 @@
   background-size: cover;
 }
 
-li {
+nav li {
   margin-top: 1rem;
 }
 
-li a {
+nav li a {
   font-size: 1.4rem;
   text-decoration: none;
   padding: 1rem;
@@ -73,8 +73,8 @@ ul {
     padding-left: 8rem;
   }
 
-  li a {
-    font-size: 1.6rem;
+  nav li a {
+    font-size: 1.5rem;
     padding: 0;
     text-decoration: none;
     color: var(--navbar-text-color);
