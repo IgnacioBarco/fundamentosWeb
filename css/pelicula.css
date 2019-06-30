@@ -122,16 +122,13 @@ main * {
     grid-column-start: 1;  
     grid-column-end: 3;  
   }
-
-
-
-  
-
   
   div[class^="item4"],
   div[class^="item5"] {
     display: flex;
   }
+
+
 
 
 

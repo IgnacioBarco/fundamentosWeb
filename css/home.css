@@ -19,26 +19,17 @@ main section {
 
 div[class^="item"] {
   display: flex;
-  height: 8rem;
+  height: 8.5rem;
   justify-content: center;
 }
 
+div[class^="item"] div[class^="descripcion"],
 a[class^="prev-item"],
 a[class^="next-item"] {
   display: none;
 }
 
 @media all and (min-width: 480px) {
-  main {
-    display: block;
-  }
-
-  main section {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
   section > div h2 {
     display: flex;
     flex-direction: row;
@@ -75,34 +66,59 @@ a[class^="next-item"] {
   div[class^="item"] {
     display: flex;
     flex-grow: 1;
-  }
-
-  /* hacer el cuaro mas pequeño para posible icono
-  
-  .lista-recomendacion .item-recomendacion1,
-  .lista-recomendacion .item-recomendacion2,
-  .lista-recomendacion .item-recomendacion3 {
-    flex-grow: 4;
-  }
-  .lista-recomendacion .item-recomendacion4 {
-    flex-grow: 1;
-  } */
-
-  div[class^="item"] {
-    padding-right: 1rem;
+    flex-direction: column;
+    padding-right: 0.5rem;
     margin-bottom: 2rem;
     margin-top: 0.5rem;
   }
 
-  div[class^="item4"],
-  div[class^="item5"] {
+  div[class^="item"] div[class^="descripcion"] {
+    display: inline;
+    text-align: end;
+  }
+
+  div[class^="item"]:first-child {
+    padding-left: 0.5rem;
+  }
+
+  section div[class^="lista"] {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .div[class^="lista"] div[class^="item"] {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  div[class^="item"] > img {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  div[class^="lista"] div[class^="item4"],
+  div[class^="lista"] div[class^="item5"] {
     display: none;
   }
 }
 
 @media all and (min-width: 991px) {
-  div[class^="item4"],
-  div[class^="item5"] {
+  div[class^="lista"] div[class^="item4"],
+  div[class^="lista"] div[class^="item5"] {
     display: flex;
+  }
+
+  div[class^="item"] div[class^="descripcion"] {
+    display: none;
+  }
+
+  div[class^="item"]:hover div[class^="descripcion"] {
+    display: inline;
+    text-align: end;
   }
 }
